@@ -1,0 +1,204 @@
+<div class="page-header">
+    <h1>Settings</h1>
+    <nav class="breadcrumb">
+        <span>Settings</span>
+        <span class="separator">/</span>
+        <span class="current">Data and Privacy</span>
+    </nav>
+</div>
+
+<section class="settings-section">
+    <h2>Security & Privacy Settings</h2>
+
+    <!-- Data Management Section -->
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-database"></i>
+            <div>
+                <h2>Data Management</h2>
+                <p>Control your data and download or clear information associated with your account.</p>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <!-- Download All Data -->
+            <div class="setting-item clickable">
+                <div class="setting-info">
+                    <i class="fas fa-download"></i>
+                    <div>
+                        <h5>Download All Data</h5>
+                        <p>Export all your account data as a ZIP file</p>
+                    </div>
+                </div>
+                <div class="setting-control">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+
+            <!-- Clear Activity Logs -->
+            <div class="setting-item clickable">
+                <div class="setting-info">
+                    <i class="fas fa-eraser"></i>
+                    <div>
+                        <h5>Clear Activity Logs</h5>
+                        <p>Remove all activity history from your account</p>
+                    </div>
+                </div>
+                <div class="setting-control">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Controls Section -->
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-shield-alt"></i>
+            <div>
+                <h2>Privacy Controls</h2>
+                <p>Manage how your information is used and shared within the platform.</p>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <!-- Data Sharing -->
+            <div class="setting-item">
+                <div class="setting-info">
+                    <i class="fas fa-share-alt"></i>
+                    <div>
+                        <h5>Data Sharing</h5>
+                        <p>Control how your data is shared with third parties</p>
+                    </div>
+                </div>
+                <div class="setting-control">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Analytics Tracking -->
+            <div class="setting-item">
+                <div class="setting-info">
+                    <i class="fas fa-chart-line"></i>
+                    <div>
+                        <h5>Analytics Tracking</h5>
+                        <p>Allow usage data collection for service improvement</p>
+                    </div>
+                </div>
+                <div class="setting-control">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Cookie Preferences -->
+            <div class="setting-item">
+                <div class="setting-info">
+                    <i class="fas fa-cookie-bite"></i>
+                    <div>
+                        <h5>Cookie Preferences</h5>
+                        <p>Manage cookie settings for your account</p>
+                    </div>
+                </div>
+                <div class="setting-control">
+                    <i class="fas fa-cog"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Deletion Section -->
+    <div class="card">
+       
+
+        <div class="card-body">
+            <div class="settings-group">
+                <div class="setting-item2">
+                    <div class="setting-info2">
+                        <i class="fas fa-trash"></i>
+                        <div>
+                            <h2>Account Deletion</h2>
+                            <p>Permanently remove your account and all associated data from our systems.</p>
+                        </div>
+                    </div>
+                    <div class="setting-control">
+                        <button class="btn btn-danger">Delete Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.btn-danger {
+    background-color: #5558DD;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-danger:hover {
+    background-color: #6C6FE6;
+}
+
+.setting-item {
+    background-color: #F8F7FF;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    flex-direction: row;
+}
+.setting-item2 {
+    background-color: #F8F7FF;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.setting-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+.setting-info2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+}
+
+.setting-info i {
+    color: #6C5DD3;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+.setting-info h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.setting-info p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.setting-control {
+    margin-top: 16px;
+    /* margin-left: 32px; */
+}
+</style> 

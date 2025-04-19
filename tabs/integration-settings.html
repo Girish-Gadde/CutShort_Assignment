@@ -1,0 +1,65 @@
+<div class="page-header">
+    <h1>Settings</h1>
+    <nav class="breadcrumb">
+        <span>Settings</span>
+        <span class="separator">/</span>
+        <span class="current">Integration Settings</span>
+    </nav>
+</div>
+
+<section class="settings-section">
+    <h2>Integration Settings</h2>
+
+    <!-- Email SMTP Setup -->
+    <div class="setting-item">
+        <div class="setting-info">
+            <i class="fas fa-envelope"></i>
+            <div>
+                <h5>Email SMTP Setup</h5>
+                <p>Configure email server settings</p>
+            </div>
+        </div>
+        <div class="setting-control">
+            <button class="btn btn-icon">
+                <i class="fas fa-pen"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Webhook URL -->
+    <div class="setting-group">
+        <label class="setting-label">Webhook URL</label>
+        <div class="input-group">
+            <input type="text" 
+                   class="form-control" 
+                   value="https://api.techai.com/webhooks/incoming" 
+                   readonly>
+            <button class="btn btn-icon" title="Copy URL">
+                <i class="fas fa-link"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Save Integrations</button>
+    </div>
+</section> 
+
+
+<style>
+    .input-group {
+        display: flex;
+        flex-direction: row;
+        max-width: 710px;
+    }
+
+    .input-group .form-control {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+
+    .input-group .btn-icon {
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+</style>

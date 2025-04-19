@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechAI - Settings</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Fixed Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="brand">TechAI</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <button class="nav-button active" data-tab="profile-settings">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Profile Settings</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-button" data-tab="change-password">
+                            <i class="fas fa-lock"></i>
+                            <span>Change Password</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-button" data-tab="default-settings">
+                            <i class="fas fa-cog"></i>
+                            <span>Default Settings</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-button" data-tab="notification-settings">
+                            <i class="fas fa-bell"></i>
+                            <span>Notification Settings</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-button" data-tab="security-privacy">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Data and Privacy</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="nav-button" data-tab="integration-settings">
+                            <i class="fas fa-plug"></i>
+                            <span>Integration Settings</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-info">
+                    <img src="assets/default-avatar.png" alt="Admin User" class="avatar">
+                    <div class="user-details">
+                        <span class="user-name">Admin User</span>
+                        <span class="user-email">admin@techai.com</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="content-container" id="main-content">
+                <!-- Tab content will be loaded here dynamically -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Load app.js first -->
+    <script src="js/app.js" defer></script>
+    <!-- Load tab-specific scripts -->
+    <script src="js/profile-settings.js" defer></script>
+    <script src="js/change-password.js" defer></script>
+    <script src="js/integration-settings.js" defer></script>
+    <script src="js/notification-settings.js" defer></script>
+    <script src="js/security-privacy.js" defer></script>
+    <script src="js/default-settings.js" defer></script>
+</body>
+</html> 

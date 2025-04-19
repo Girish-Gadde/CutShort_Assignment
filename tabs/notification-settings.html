@@ -1,0 +1,279 @@
+<div class="page-header">
+    <h1>Settings</h1>
+    <nav class="breadcrumb">
+        <span>Settings</span>
+        <span class="separator">/</span>
+        <span class="current">Notification Settings</span>
+    </nav>
+</div>
+
+<section class="settings-section">
+    <h2>Notification Preferences</h2>
+
+    <div class="card">
+        <div class="card-header">
+            <i class="fas fa-bell"></i>
+            <div>
+                <h2>Notification Settings</h2>
+                <p>Manage how and when you receive notifications from TechAI. Customize alerts for different activities and channels.</p>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <form class="notification-settings-form">
+                <!-- Email Notifications -->
+                <div class="settings-group">
+                    <h4>Email Notifications</h4>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h5>Processing Completed</h5>
+                                <p>Receive email when AI processing is complete</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="email-processing">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h5>New Features</h5>
+                                <p>Updates about new TechAI capabilities</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="email-features">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-user-shield"></i>
+                            <div>
+                                <h5>Account Updates</h5>
+                                <p>Security and account-related notifications</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="email-updates">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- In-App Notifications -->
+                <div class="settings-group">
+                    <h4>In-App Notifications</h4>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-spinner"></i>
+                            <div>
+                                <h5>Processing Status</h5>
+                                <p>Show real-time processing updates</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="inapp-processing">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <div>
+                                <h5>System Alerts</h5>
+                                <p>Important system messages and warnings</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="inapp-alerts">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-lightbulb"></i>
+                            <div>
+                                <h5>Tips & Suggestions</h5>
+                                <p>Helpful tips for better results</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="inapp-tips">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Push Notifications -->
+                <div class="settings-group">
+                    <h4>Mobile Push Notifications</h4>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h5>Enable Push Notifications</h5>
+                                <p>Master toggle for mobile notifications</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="mobile-enable">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h5>Processing Completed</h5>
+                                <p>Notify when AI tasks are finished</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="mobile-processing">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <div>
+                                <h5>Critical Alerts</h5>
+                                <p>Important security and system alerts</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="mobile-alerts">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Notification Schedule -->
+                <div class="settings-group">
+                    <h4>Notification Schedule</h4>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-moon"></i>
+                            <div>
+                                <h5>Quiet Hours</h5>
+                                <p>Don't send notifications during selected hours</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <label class="switch">
+                                <input type="checkbox" data-setting="quiet-hours">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h5>Time Range</h5>
+                                <p>Select your preferred notification time range</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <select class="form-control notification-select" data-setting="time-range">
+                                <option value="Select">Select Time Range</option>
+                                <option value="9am-5pm">9 AM - 5 PM</option>
+                                <option value="10am-6pm">10 AM - 6 PM</option>
+                                <option value="11am-7pm">11 AM - 7 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="setting-item">
+                        <div class="setting-info">
+                            <i class="fas fa-bell"></i>
+                            <div>
+                                <h5>Notification Frequency</h5>
+                                <p>How often would you like to receive notifications?</p>
+                            </div>
+                        </div>
+                        <div class="setting-control">
+                            <select class="form-control notification-select" data-setting="notification-frequency">
+                                <option value="Select">Select Frequency</option>
+                                <option value="immediately">Immediately</option>
+                                <option value="hourly">Hourly</option>
+                                <option value="daily">Daily</option>
+                                <option value="weekly">Weekly</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" class="btn btn-text">Reset to Defaults</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<style>
+.notification-select {
+    width: 200px;
+    min-width: 200px;
+}
+
+.setting-control {
+    flex-shrink: 0;
+}
+
+.form-control.notification-select {
+    height: 36px;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-control.notification-select:focus {
+    border-color: #6C5DD3;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(108, 93, 211, 0.2);
+}
+.card-header{
+        display: flex;
+        flex-direction: column;
+    }
+</style> 
